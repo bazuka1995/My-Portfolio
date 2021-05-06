@@ -1,12 +1,12 @@
-import React from 'react';
-import classes from './Astro.module.css';
+import React from "react";
+import "./Astro.scss";
 
 const Astro = (props) => {
-    return (
-        <div className={classes.Astro}>
-            <p>Astro</p>
-        </div>
-    );
-}
- 
+  return (
+    <div>
+      
+    </div>
+  );
+};
+
 export default Astro;
