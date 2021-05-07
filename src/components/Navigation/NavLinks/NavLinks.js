@@ -16,13 +16,13 @@ const NavLinks = ({ toggle, nav }) => {
     <nav className="nav-slide" style={style}>
       <div className="page-links">
         <Link onClick={toggle} to="/" className={`link-page ${nav ? "link-page-open" : ""}`}>
-          <span className="link-text">Home</span>
+          Home
         </Link>
         <Link onClick={toggle} to="/Portfolio/Astro" className={`link-page ${nav ? "link-page-open" : ""}`}>
-        <span className="link-text">Astro</span>
+          Astro
         </Link>
         <Link onClick={toggle} to="/Portfolio/Travel" className={`link-page ${nav ? "link-page-open" : ""}`}>
-        <span className="link-text">Travel</span>
+          Travel
         </Link>
       </div>
     </nav>
