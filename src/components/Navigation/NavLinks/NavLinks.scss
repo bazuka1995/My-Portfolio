@@ -15,9 +15,11 @@
   align-items: center;
   justify-content: center;
   z-index: 20;
-  transition: all 0.4s ease-out;
-  clip-path: circle(200% at calc(100% - 2rem) 2rem);
+  transition: all .4s ease-out;
+
+  transform: translateY(-100%);
   opacity: 0;
+
 
   .page-links {
     display: flex;
@@ -45,6 +47,7 @@
       outline: none;
     }
 
+
     &-open {
       -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
       clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
@@ -52,8 +55,8 @@
       opacity: 0;
       animation-name: titleAnimation;
       animation-timing-function: ease;
-      animation-delay: 0.5s;
-      animation-duration: 0.5s;
+      animation-delay: .5s;
+      animation-duration: .5s;
       animation-fill-mode: forwards;
 
       @keyframes titleAnimation {
@@ -70,18 +73,8 @@
           -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
           clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
         }
+
       }
     }
   }
-
-  .social-icon {
-    width: 2rem;
-    height: 2rem;
-    background-color: white;
-  }
-}
-
-.link-text:hover {
-  text-shadow: 5px 7px rgba(0, 0, 0, 0.205);
-  transition: 0.1s ease-in-out;
 }

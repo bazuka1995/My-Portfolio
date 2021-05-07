@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 const NavLinks = ({ toggle, nav }) => {
   let style;
+
   if (nav) {
     style = {
       transform: `translate(0)`,
