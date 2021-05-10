@@ -1,5 +1,5 @@
 import React from "react";
-import "./Astro.module.css";
+import classes from "./Astro.module.css";
 import { Renderer, Camera, Transform } from 'ogl';
 
 const Astro = (props) => {
